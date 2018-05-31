@@ -4,7 +4,7 @@
     ViewBag.Title = "Excluir Registro";
 }
 
-<h2>Excluir Registro</h2>
+<h2>@ViewBag.Title</h2>
 
 <h3>Tem certeza de que quer excluir este registro?</h3>
 <div>
@@ -54,6 +54,7 @@
 </div>
 
 <div>
+    <br />
     @Html.ActionLink("Consultar Livros", "Query")
     <br />
     @Html.ActionLink("Página Inicial", "Index")

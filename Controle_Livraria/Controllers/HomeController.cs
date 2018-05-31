@@ -99,14 +99,14 @@ namespace Controle_Livraria.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Descrição da aplicação";
+            ViewBag.Message = "Descrição da Aplicação";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Informações de contato";
+            ViewBag.Message = "Felipe de Freitas Corrêa";
 
             return View();
         }
