@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Controle_Livraria.Models.Livro>
+
+@{
+    ViewBag.Title = "Consulta de Livros";
+}
+
+<h2>Consultar Livros</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeLivro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AutorLivro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PaginasLivro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EditoraLivro)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeLivro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AutorLivro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PaginasLivro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EditoraLivro)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Update", new { IdLivro = item.IdLivro }) |
+                @Html.ActionLink("Excluir", "Delete", new { IdLivro = item.IdLivro })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<div>
+    @Html.ActionLink("Cadastrar Livros", "Register")
+    <br />
+    @Html.ActionLink("Página Inicial", "Index")
+</div>

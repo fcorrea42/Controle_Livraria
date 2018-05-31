@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EstoqueModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Livro">
+    <Key>
+      <PropertyRef Name="IdLivro" />
+    </Key>
+    <Property Name="IdLivro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NomeLivro" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AutorLivro" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PaginasLivro" Type="Int32" Nullable="false" />
+    <Property Name="EditoraLivro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="EstoqueEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Livros" EntityType="Self.Livro" />
+  </EntityContainer>
+</Schema>
