@@ -1,5 +1,14 @@
 # Controle_Livraria
-Projeto de controle de livros disponíveis em uma livraria, desenvolvido em ASP.NET MVC.
+Projeto de controle de livros disponíveis em uma livraria, desenvolvido em ASP.NET MVC usando a IDE Visual Studio Community 2017.
+
+**Tecnologias aplicadas:**
+- Linguagem de Programação C#
+- ASP.NET MVC
+- HTML5 / CSS3
+- JavaScript
+- Bootstrap
+- JQuery
+- Modernizr
 
 ## Controle de Estoque da Livraria
 
